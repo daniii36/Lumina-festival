@@ -1,0 +1,660 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+}
+
+.todo {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+section {
+  padding: 30px;
+}
+
+nav {
+  padding: 1px;
+  background-color: #4c3271;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-content {
+  background: url(../img/header.png) no-repeat center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.header-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-content h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+}
+
+.dorado {
+  color: #d4990d;
+}
+
+.falta {
+  background-color: #d4990d;
+  color: white;
+  display: flex; 
+  align-items: center; 
+  padding: 20px; 
+}
+
+.falta h1,
+.falta h3,
+.falta h2,
+.falta p {
+  color: white; 
+  text-align: left; 
+  margin-bottom: 10px; 
+}
+
+.falta h1 {
+  font-size: 2.5rem; 
+  margin-top: 0;
+}
+
+.falta h3 {
+  font-size: 1.2rem;
+}
+
+.falta h2 {
+  font-size: 1.5rem;
+}
+
+.falta p {
+  font-size: 1rem;
+}
+
+.falta img {
+  display: block; 
+  max-width: 40%; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+#fechas {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#intro h1 {
+  color: #d4990d;
+  text-align: center;
+  font-size: 50px;
+}
+
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+}
+
+.dias article {
+  color: white;
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .dias article {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .dias article {
+    flex-basis: 100%;
+  }
+}
+
+.dias h1 {
+  background-color: #276a38;
+  color: white;
+}
+
+.dias img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+#info {
+  text-align: center;
+  color: white;
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+#info p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.expo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.expo h1 {
+  width: 100%;
+  background-color: #ae4038;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.expo h2 {
+  width: 100%;
+  color: #d4990d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.expo article {
+  width: 20%;
+  min-width: 200px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.expo img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.actividades {
+  background-color: #4189A6;
+  color: white;
+}
+
+.actividades-1 {
+  background-color: #A63737;
+  color: white;
+}
+
+.actividades h1,
+.actividades-1 h1 {
+  color: #d4990d;
+}
+
+.entradas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.entradas h1 {
+  background-color: #3d3d62;
+  color: white;
+  width: 100%;
+  text-align: left;
+}
+
+.entradas p {
+  color: black;
+  text-align: left;
+}
+
+.entradas article {
+  background-color: #d4990d;
+  border-radius: 20px;
+  width: 20%;
+  min-width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo {
+  background-color: #4189A6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.invitados {
+  color: #d4990d;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.video {
+  margin-top: 20px;
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.titulo-video {
+  color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+#vip {
+  width: 35%;
+}
+
+.reserva {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.reserva h2 {
+  background-color: #276a38;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.reserva img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.hotel {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.hotel-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hotel-imgs img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hotel-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hotel-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hotel-info strong {
+  font-weight: bold;
+}
+
+.reserva-btn {
+  display: inline-block;
+  background-color: #1d682f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.reserva-btn:hover {
+  background-color: #14511f;
+}
+
+.informacion-reservacion {
+  background-color: #453073;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.informacion-reservacion h1 {
+  color: #D99311;
+  text-align: left;
+}
+
+.evento-cine h1 {
+  background-color: #453073;
+  color: white;
+  text-align: left;
+}
+
+.evento-cine h2 {
+  color: #D99311;
+  text-align: left;
+}
+
+.tras h1 {
+  background-color: #ae4038;
+  color: aliceblue;
+}
+
+.tras h2,
+.tras p {
+  text-align: left;
+}
+
+.tras-btn {
+  background-color: #3d3d62;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.tras-btn:hover {
+  background-color: #6a1cb7;
+}
+
+.viaje-estancia h1 {
+  padding: 30px;
+  background-color: green;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.viaje-estancia h2 {
+  font-size: 28px;
+  background-color: #ae4038;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.viaje-estancia p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hotel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-imgs img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .hotel-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .todo {
+    width: 97%;
+  }
+
+  .expo {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .expo article {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .dias {
+    padding: 20px;
+  }
+
+  .dias article {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .entradas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .entradas article,
+  #vip {
+    width: 100%;
+  }
+
+  section,
+  article {
+    padding: 0px;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-content h1 {
+    font-size: 40px;
+  }
+
+ 
+  @media (max-width: 768px) {
+     .falta {
+  background-color: #d4990d;
+  color: white;
+  display: flex;
+  align-items: flex-start; 
+  padding: 20px;
+}
+  }
+  
+
+.falta img {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  margin-right: 20px; 
+}
+
+.falta-texto {
+  flex-grow: 1; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.falta h1,
+.falta h3,
+.falta h2,
+.falta p {
+  color: white;
+  text-align: left; 
+  margin-bottom: 5px; 
+  margin-top: 0; 
+}
+
+.falta h1 {
+  font-size: 2.5rem; 
+}
+
+.falta h3 {
+  font-size: 1.2rem;
+}
+
+.falta h2 {
+  font-size: 1.5rem;
+}
+
+.falta p {
+  font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .falta {
+  background-color: #d4990d;
+  color: white;
+  display: flex; 
+  align-items: center; 
+  padding: 20px;
+  text-align: left; 
+}
+}
+  
+.falta img {
+  display: block;
+  max-width: 40%; 
+  height: auto;
+  margin-right: 30px; 
+}
+
+.falta-texto {
+  flex-grow: 1; 
+}
+
+.falta-texto h1,
+.falta-texto h3,
+.falta-texto h2,
+.falta-texto p {
+  color: white;
+  margin-bottom: 5px; 
+  margin-top: 0;
+  line-height: 1.2; 
+  font-weight: normal; 
+}
+
+.falta-texto h1 {
+  font-size: 2.3rem; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+}
+
+.falta-texto h3 {
+  font-size: 1.1rem; 
+}
+
+.falta-texto h2 {
+  font-size: 1.3rem; 
+}
+
+.falta-texto p {
+  font-size: 0.9rem; 
+}
+
+.falta-texto h3 span,
+.falta-texto h2 span {
+  display: inline-block; 
+}
+
+
+@media (max-width: 768px){
+  .falta {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+} 
+  
+  .falta img {
+    max-width: 80%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .falta-texto {
+    align-items: center; 
+  }
+
+  .falta-texto h1,
+  .falta-texto h3,
+  .falta-texto h2,
+  .falta-texto p {
+    text-align: center; 
+  }
+}
